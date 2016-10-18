@@ -1,23 +1,5 @@
 <!doctype html>
 
-<!--
-    
-    So you'd like to know how to use impress.js?
-    
-    You've made the first, very important step - you're reading the source code.
-    And that's how impress.js presentations are built - with HTML and CSS code.
-    
-    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
-    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
-    
-    You need to design and build it by hand.
-    
-    So...
-    
-    Would you still like to know how to use impress.js?
-    
--->
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -81,7 +63,32 @@
             <li>
                 Vim - How vim Works?
             </li>
-            // TODO: add Mana's outline
+
+            <li>
+                What is a Process?
+            </li>
+            <li>
+                Process Life Cycle.
+            </li>
+            <li>
+                Available Commands...
+            </li>
+            
+            <li>
+                Permissions
+            </li>
+            <li>
+                Creating and Deleting Users
+            </li>
+            <li>
+                Setting and Changing Passwords
+            </li>
+            <li>
+                Visudo
+            </li>
+            <li>
+                Groups
+            </li>
         </q>
     </div>
 
@@ -227,7 +234,7 @@
     </div>
 
 
-    <div id="big2" class="big step" data-x="6000" data-y="+500" data-rotate="180" data-scale="6">
+    <div id="big2" class="big step" data-x="6000" data-y="+500" data-rotate="180" data-scale="5">
         <p>
             Let's talk about <b style="font-size: 120px;">Processes</b> <span class="thoughts">and stuff...</span>
         </p>
@@ -235,109 +242,283 @@
 
     <div id="tiny12" class="step" data-x="5300" data-y="-1000" data-z="-5000" data-rotate="0" data-scale="1">
         <center>
-            <p>
-                Writing is important!<br>
-                But Terminal is more than writing...!<br>
+            <q>
+                What is a Process?
+            </q>
+            <br>
+            <br>
+            <p style="font-size: 60%;">
+                A process is an executing (i.e., running) instance of a program.<br>
+                Processes are also frequently referred to as tasks.<br>
             </p>
         </center>
-        <div style="background-color: black;">
-            <p style="color: white; font-size: 50%; margin-left: 10px;">
-                amir@SomeAwayServer:~/ vim index.html <br>
-                . <br>
-                . <br>
-                amir@SomeFarAwayServer:~/ vim usersCollection.bson <br>
-                . <br>
-                . <br>
-                amir@SomeFarFarAwayServer:~/ vim config.php
-            </p>
-        </div>
     </div>
 
     <div id="tiny13" class="step" data-x="6300" data-y="-1000" data-z="-5000" data-rotate="0" data-scale="1">
         <center>
             <p>
-                Use more out of your keyboard.
+                Process Life Cycle
             </p>
-            <p style="margin-top: 60px;">
-                Develop a language which does not have a comfortable IDE or editor.
-            </p>
+            <br>
+            <img src="processlifecycle.png" style="width: 95%;">            
         </center>
     </div>
 
     <div id="tiny14" class="step" data-x="7300" data-y="-1000" data-z="-5000" data-rotate="0" data-scale="1">
-        <center>
-            <p>
-                Customize anything..!<br>
-                Configure anything..!
-            </p>
-            <p style="margin-top: 100px;">
-                Eventually, GUI is for <i>dummies!</i>
-            </p>
-        </center>
-    </div>
-
-    <div id="tiny15" class="step" data-x="8300" data-y="-1000" data-z="-5000" data-rotate="0" data-scale="1">
-        <center>
-            <img src="sublime.png" style="width: 30%;">
-            <img src="nano.png" style="width: 40%;">
-            <img src="vim.png" style="width: 35%;">
-        </center>
-    </div>
-
-    <div id="tiny16" class="step" data-x="5300" data-y="0" data-z="-5000" data-rotate="0" data-scale="1">
-        <center>
-            <p>
-                The name "Vim" is an acronym for "Vi IMproved" * <br>
+        <q>
+            Top displays a list of processes, with the ones using the most CPU at the top.
+        </q>
+        <div style="background-color: black;">
+            <p style="color: white; font-size: 45%; margin-left: 10px;">
+                amir@Ubuntu:~/ top<br>
                 <br>
-                Vim is often called a "programmer's editor"
+                amir@Ubuntu:~/ ps<br>
+                <br>
+                amir@Ubuntu:~/ pstree <br>
             </p>
-            <p style="font-size: 50%; margin-top: 150px;">
-                * Wikipedia
+        </div>
+    </div>
+
+    
+    <div id="big3" class="big step" data-x="2000" data-y="+3500" data-rotate="180" data-scale="5">
+        <p>
+            Let's talk about <b style="line-height: 120px; font-size: 80px">User Management</b> <span class="thoughts">and stuff...</span>
+        </p>
+    </div>
+
+    <div id="tiny18" class="step" data-x="300" data-y="+3500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p style="align-items: center">
+                Every system: Multitask<br>
+                Linux: Multiple users! <br>
+                How does it work properly?<br>
+                <b style="font-size: 150%">PERMISSIONS</b><br>
+                which are read, write and execute!<br>
             </p>
         </center>
     </div>
 
-    <div id="tiny17" class="step" data-x="6300" data-y="0" data-z="-5000" data-rotate="0" data-scale="1">
+    <div id="tiny19" class="step" data-x="1300" data-y="3500" data-z="-5000" data-rotate="0" data-scale="1">
         <center>
-            <img src="vim.png" style="width: 40%;">
+            <p>
+                So how are we gonna view the files' permissions? <br>
+
+            </p>
         </center>
-        <p style="font-size: 60%;">"Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as 'vi' with most UNIX systems and with Apple OS X."<p>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ls -l file1.txt<br>
+            -rw-r--r-- 1 root root 1031 Nov 18 09:22 /etc/passwd
+        </p>
         <center>
-            <p style="font-size: 60%;">
-                <a href="http://www.vim.org/">http://www.vim.org/</a>
+            <p style="font-size: 80%; color: dimgrey">
+                -: type <br>
+                rw- : defines the permission of owner<br>
+                r-- : defines permission for the same group as the file owner<br>
+                r-- : all other users
             </p>
         </center>
     </div>
-    
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+
+    <div id="tiny20" class="step" data-x="2300" data-y="+3500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p>
+                Creating and Deleting Users<br>
+            </p>
+        </center>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ useradd fake<br>
+            ~$ useradd fake -d /home/userHome<br>
+            ~$ useradd fake -f 2<br>
+            ~$ useradd fake -e 2016-11-05<br>
+            ~$ useradd fake -s /bin/shell1<br>
+            ~$ usermod fake -f 2
+        </p>
+    </div>
+
+    <div id="tiny21" class="step" data-x="3300" data-y="3500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p>
+                Setting and Changing Password<br>
+            </p>
+            <!--<img src="sublime.png" style="width: 30%;">-->
+            <!--<img src="nano.png" style="width: 40%;">-->
+            <!--<img src="vim.png" style="width: 35%;">-->
+        </center>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ passwd fake<br>
+            Enter new UNIX password:<br>
+            Retype new UNIX password:<br>
+            passwd: password updated successfully<br>
+            ~$ passwd<br>
+            Changing password for fake.<br>
+            (current) UNIX password:<br>
+            Enter new UNIX password:<br>
+            Retype new UNIX password:<br>
+            Password changed
+        </p>
+    </div>
+
+    <div id="tiny22" class="step" data-x="300" data-y="4500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p>
+               Another Way of Creating Users
+            </p>
+        </center>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ apt-get install adduser<br>
+            ~$ adduser fake<br>
+            Adding user `cjones' ...<br>
+            Adding new group `cjones' (1001) ...<br>
+            Adding new user `cjones' (1001) with group `cjones' ...<br>
+            Creating home directory `/home/cjones' ...<br>
+            Copying files from `/etc/skel' ...<br>
+            Enter new UNIX password:<br>
+            Retype new UNIX password:<br>
+            passwd: password updated successfully<br>
+            Is the information correct? [Y/n] Y
+        </p>
+        <center>
+            <p style="font-size: 80%">
+                This way is good for first-time administrators.<br>
+                It automatically creates a home directory and sets the default group, shell, etc.
+            </p>
+        </center>
+    </div>
+
+    <div id="tiny23" class="step" data-x="1300" data-y="4500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p>
+                Deleting User Accounts
+            </p>
+        </center>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ userdel fake
+        </p>
+        <p style="font-size: 70%">
+            This command only deletes the user's account.<br>
+        </p>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ userdel -r fake
+        </p>
+        <p style="font-size: 70%">
+            This command deletes the user, their home folder, and their files, etc.<br>
+        </p>
+
+    </div>
+
+    <div id="tiny24" class="step" data-x="2300" data-y="4500" data-z="-5000" data-rotate="0" data-scale="1">
+        <p>Little More About Sudo!</p>
+        <ul style="font-size: 60%; list-style-type: disc; margin-left: 25px" >
+            <li>Gives only a few superuser permissions to certain users</li>
+            <li>The list of authorized users is kept in /etc/sudoers</li>
+            <li>Sudo will prompt for a password and then check the /etc/sudoers.</li>
+        </ul>
+    </div>
+
+    <div id="tiny25" class="step" data-x="3300" data-y="4500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p style="text-align: center">
+                List of Sudoers!!<br>
+                <li style="font-size: 70%">Don't edit with text editor!</li>
+                <li style="font-size: 70%">incorrect editing => prevents system access</li>
+            </p>
+            <p>
+                How to edit??!
+            </p>
+        </center>
+    </div>
+
+
+    <div id="tiny26" class="step" data-x="300" data-y="5500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p style="font-size: 200%"><b>Visudo</b></p>
+        </center>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ visudo <br>
+        </p>
+    </div>
+
+
+    <div id="tiny27" class="step" data-x="1300" data-y="5500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p>Log into your system as root and enter the command visudo.</p>
+        </center>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            # User privilege specification<br>
+            root    ALL=(ALL:ALL) ALL<br>
+            cjones  ALL=(ALL:ALL) ALL<br>
+            kbrown  ALL=(ALL:ALL) ALL<br>
+            lmartin ALL=(ALL:ALL) ALL
+        </p>
+        <p style="font-size: 70%; text-align: center">Next time u won't need to login as a root!<br>Just enter "sudo visudo"!</p>
+    </div>
+
+    <div id="tiny28" class="step" data-x="2300" data-y="5500" data-z="-5000" data-rotate="0" data-scale="1">
+        <center>
+            <p style="font-size: 200%"><b>GROUPS!</b></p>
+        </center>
+    </div>
+    <div id="tiny29" class="step" data-x="3300" data-y="5500" data-z="-5000" data-rotate="0" data-scale="1">
+        <p><b>Why Groups?!</b></p>
+        <ul style="list-style-type: disc; font-size: 55%">
+            <li>Logically organize sets of user accounts</li>
+            <li>Allow users to share files within their group</li>
+            <li>Each file on the system has both a user and a group owner associated with it.</li>
+            <li>Every user is assigned to at least one group</li>
+            <li>User has "group access" to any files on the system with a group ID contained in his list of groups.</li>
+        </ul>
+    </div>
+
+    <div id="tiny30" class="step" data-x="300" data-y="6500" data-z="-5000" data-rotate="0" data-scale="1">
+        <p>Some commands:</p>
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ newgrp group1<br>
+            ~$ groupadd group2<br>
+            ~$ sudo groupmod gp1 -n gp2<br>
+        </p>
+    </div>
+
+    <div id="tiny31" class="step" data-x="1300" data-y="6500" data-z="-5000" data-rotate="0" data-scale="1">
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ ls -al<br>
+            drwxr-xr-x 2 user user 4096 Jan  9 10:11 documents<br>
+        </p>
+        <p style="font-size: 50%">
+            ``drwxr-xr-x`` are the permissions<br>
+            ``2`` is the number of files or directories<br>
+            ``user`` is the owner<br>
+            ``user`` is the group<br>
+            ``4096`` is the size<br>
+            ``Jan  9 10:11`` is the date/time of last access<br>
+            ``documents`` is the directory<br>
+        </p>
+    </div>
+    <div id="tiny32" class="step" data-x="2300" data-y="6500" data-z="-5000" data-rotate="0" data-scale="1">
+        <p>chmod: Change file access permission</p>
+        <p>chown: Change file owner or group</p>
+        <p>chroot: Run command with special root directory</p>
+    </div>
+    <div id="tiny33" class="step" data-x="3300" data-y="6500" data-z="-5000" data-rotate="0" data-scale="1">
+        <p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">
+            ~$ chmod u+r,g+x blah.txt<br>
+            ~$ chmod go-rwx Work
+        </p>
+    </div>
+
+    <div id="tiny34" class="step" data-x="300" data-y="7500" data-z="-5000" data-rotate="0" data-scale="1">
+        <!--<p style="background-color: black; color: white;font-size: 60%; padding-left: 10px;">-->
+        <center>
+            <p>User Home Directory</p>
+        </center>
+        <p style="font-size: 70%">When each user is created, a home directory is created for him (/home/&ltusername&gt)<br>
+        The set of files that initially are used to populated this home directory are kept in /etc/skel</p>
+        <!--</p>-->
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="13">
     </div>
 
 </div>
 
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
 </div>
